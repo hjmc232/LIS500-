@@ -1,0 +1,56 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+}
+.headshot{
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav a.active {
+  text-decoration: underline;
+}
+body {
+  background-color: lightgray;
+}
