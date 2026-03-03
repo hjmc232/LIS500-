@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <!-- Consistent across all pages -->
   <title>LIS500 Project 2: McCormick</title>
   <link rel="stylesheet" href="stylepage.css">
 </head>
-<header>
-  <h1>LIS500 Project 2: McCormick</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="tech-hero.html">Tech Hero</a></li>
-    </ul>
-  </nav>
-</header>
 <body>
-  <h2>Welcome</h2>
-    <p class="lead">
-        This website is for first-year students at the University of Wisconsin Madison. Here you will 
+  <header class="site-header">
+    <h1>LIS500 Project 2: McCormick</h1>
+    <!-- Navigation -->
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="tech-hero.html">Tech Hero</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Add breadcrumb -->
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumbs">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+      </ol>
+    </nav>
+    <article aria-labelledby="welcome-heading">
+      <!-- Purpose of the site -->
+      <h2 id="welcome-heading">Welcome</h2>
+      <p class="lead">
+        This website is for first-year students at the University of Wisconsin Madison. Here you will
         find helpful terms, links, and stories that will help you become a better student, groupmate, and citizen.
       </p>
-        <h3>What is this website used for?</h3>
+      <section aria-labelledby="site-use-heading">
+        <h3 id="site-use-heading">What is this website used for?</h3>
+        <!--Any other way to show this besides a list? This feels basic.-->
         <ul>
           <li>A bit about the author of the website</li>
           <li>Learn key terminology related to racial equity</li>
           <li>A tech hero that inspires the author</li>
         </ul>
-      </a>
-        <h3>How to use this site</h3>
+      </section>
+      <section aria-labelledby="how-to-use-heading">
+        <h3 id="how-to-use-heading">How to use this site</h3>
         <ol>
           <li>Meet the author</li>
           <li>Utilize the resources page</li>
           <li>Dive deeper and take action</li>
         </ol>
-      </a>
-    </section>
-       <h3>Short on time?</h3>
-      <p>
-        If you only have 5 minutes: check out the <a href="resources.html">Resources</a> and read the “Key Terms."
-      </p>
-    </section>
-  </body>
+      </section>
+      <aside aria-labelledby="quick-tip-heading">
+        <h3 id="quick-tip-heading">Short on time?</h3>
+        <p>
+          If you only have 5 minutes: check out the <a href="resources.html">Resources</a> and read the "Key Terms."
+        </p>
+      </aside>
+    </article>
+  </main>
+  <!--bottom line navigation here-->
+  <footer class="site-footer">
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="tech-hero.html">Tech Hero</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

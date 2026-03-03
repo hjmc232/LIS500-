@@ -2,75 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Shared page title format -->
   <title>LIS500 Project 2: McCormick</title>
   <link rel="stylesheet" href="stylepage.css">
 </head>
-
 <body>
-<header>
-  <h1>LIS500 Project 2: McCormick</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resources.html" class="active">Resources</a></li>
-      <li><a href="tech-hero.html">Tech Hero</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Start Here</h2>
-    <p>
-      This webpage serves as a tool for you to understand Racial Equity terms and resources you may here or see 
-      across campus. Please refer to this page as a quick guide. You are encouraged to explore resources further
-      through subsequent links. 
-    </p>
-  </section>
-  <br>
-  <section>
-    <h2>Terms to know </h2>
-    <h3>Implicit Bias</h3>
-    <p>Implict bias is the negative, unconscious way sterotypes and attitudes are formed that may be ingrained in
-      a person without them realizing. These prejeduices may impact the decisions, behaviors, and perceptions about different racial groups,
-      social, or gender groups. It is important to acknowledge your implict bias and counteract them. </p>
-    <h3>Intersectionality</h3>
-    <p>Intersectionality is the way two or more social identities (e.g. living the experience of a Black female 
-      in the United States) may compound to create increased levels of oppression that would be absent 
-      if the social identities individually experienced the same situation. 
-    </p>
-    <h3>Harvard University's IAT (Implicit Association Test)</h3>
-    <p>Project Implicit was developed is Harvard Univeristy to examine if individual's find it easier to
-      pair attribute with one group of people compared to another. For example, do you associate the term "science" 
-      more with the name "Jared" or "Monique"? The IAT can be used thoughtfuly to understand your implicit biases 
-      so you can intentionally acknowledge and take action to dispell them.
-    </p>
-  </section>
-
-  <section>
-    <h2>Why this is Important to You</h2>
-    <p>
-      The University of Wisconsin-Madison is a diverse campus with students, faculty, and staff from around the world.
-      During your first few years as a Badger, you may encounter new cultures and identities unfamilar to you. It 
-      is critical that you acknowledge your implict bias, and welcome peers, teammates, and professors, among others,
-      with an open mind. As you join student organizations, choose study groups, and form friendships, it is Important
-      to understand the experiences and biases those around you face. It makes you a better classmate, leader, and 
-      member of the community.
-    </p>
-  </section>
-  <section>
-    <h2>Explore More Resources</h2>
-    <ul>
-      <li>
-        <a href="https://implicit.harvard.edu/implicit/" target="_blank" rel="noopener">Project Implicit (Harvard)</a>
-        – Take the IAT today.
-      </li>
-      <li>
-        <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noopener">Implict Bias (American Psychological Association)</a>
-        – Read more by the American Psychological Association. 
-      </li>
-      <li>
-        <a href="https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality" target="_blank" rel="noopener">
-          The Urgency of Intersectionality by Kimberlé Crenshaw.
-        </a>
-
+  <header class="site-header">
+    <h1>LIS500 Project 2: McCormick</h1>
+    <!-- Constant navigation -->
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="tech-hero.html">Tech Hero</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Add breadcrumb -->
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html" aria-current="page">Resources</a></li>
+      </ol>
+    </nav>
+    <article aria-labelledby="start-here-heading">
+      <section>
+        <h2 id="start-here-heading">Start Here</h2>
+        <p>
+          This webpage serves as a tool for you to understand Racial Equity terms and resources you may hear or see
+          across campus. Please refer to this page as a quick guide. You are encouraged to explore resources further
+          through subsequent links.
+        </p>
+      </section>
+    </article>
+    <!-- Begin main content -->
+    <article aria-labelledby="terms-heading">
+      <h2 id="terms-heading">Terms to know</h2>
+      <dl>
+        <dt class="term-title">Implicit Bias</dt>
+        <dd>
+          Implicit bias is the negative, unconscious way stereotypes and attitudes are formed that may be ingrained in
+          a person without them realizing. These prejudices may impact the decisions, behaviors, and perceptions about
+          different racial groups, social, or gender groups. It is important to acknowledge your implicit bias and
+          counteract them.
+        </dd>
+        <dt class="term-title">Intersectionality</dt>
+        <dd>
+          Intersectionality is the way two or more social identities (e.g. living the experience of a Black female
+          in the United States) may compound to create increased levels of oppression that would be absent
+          if the social identities individually experienced the same situation.
+        </dd>
+        <dt class="term-title">Harvard University's IAT (Implicit Association Test)</dt>
+        <dd>
+          Project Implicit was developed at Harvard University to examine if individuals find it easier to
+          pair an attribute with one group of people compared to another. For example, do you associate the term "science"
+          more with the name "Jared" or "Monique"? The IAT can be used thoughtfully to understand your implicit biases
+          so you can intentionally acknowledge and take action to dispel them.
+        </dd>
+      </dl>
+    </article>
+    <section>
+      <h2>Why this is Important to You</h2>
+      <p>
+        The University of Wisconsin-Madison is a diverse campus with students, faculty, and staff from around the world.
+        During your first few years as a Badger, you may encounter new cultures and identities unfamiliar to you. It
+        is critical that you acknowledge your implicit bias, and welcome peers, teammates, and professors, among others,
+        with an open mind. As you join student organizations, choose study groups, and form friendships, it is important
+        to understand the experiences and biases those around you face. It makes you a better classmate, leader, and
+        member of the community.
+      </p>
+    </section>
+    <aside aria-labelledby="resource-list-heading">
+      <h2 id="resource-list-heading">Explore More Resources</h2>
+      <ul>
+        <li>
+          <a href="https://implicit.harvard.edu/implicit/" target="_blank" rel="noopener">Project Implicit (Harvard)</a>
+          - Take the IAT today.
+        </li>
+        <li>
+          <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noopener">Implicit Bias (American Psychological Association)</a>
+          - Read more by the American Psychological Association.
+        </li>
+        <li>
+          <a href="https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality" target="_blank" rel="noopener">
+            The Urgency of Intersectionality by Kimberlé Crenshaw.
+          </a>
+        </li>
+        <li>
+          <a href="https://diversity.wisc.edu/" target="_blank" rel="noopener">
+            UW-Madison Division of Diversity, Equity & Educational Achievement
+          </a>
+        </li>
+        <li>
+          <a href="assets/docs/diversity-this-is-hard.pdf" target="_blank" rel="noopener">
+            FFFFFF Diversity - This is Hard.
+          </a>
+        </li>
+        <li>
+          <a href="assets/docs/decoding-black-feminist-hashtags.pdf" target="_blank" rel="noopener">
+            Decoding Black Feminist Hashtags as Becoming
+          </a>
+        </li>
+      </ul>
+      <!--add intersectionality video for diverse media options-->
+    </aside>
+    <section aria-labelledby="video-heading">
+      <h2 id="video-heading">Featured Video</h2>
+      <p>
+        Watch Kimberlé Crenshaw's TedTalk on intersectionality and the importance of understanding how it impacts different groups.
+      </p>
+      <div class="video-frame">
+        <iframe
+          src="https://embed.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality"
+          title="TED Talk: The Urgency of Intersectionality by Kimberlé Crenshaw"
+        </iframe>
+      </div>
+    </section>
+  </main>
+  <!--bottom navigation goes here-->
+  <footer class="site-footer">
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="tech-hero.html">Tech Hero</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
